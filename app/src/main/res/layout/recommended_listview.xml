@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/card_id"
+        android:elevation="10dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/card_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="110dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+            android:id="@+id/relative_title_id"
+            android:layout_marginStart="100dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/rubik_medium"
+                android:id="@+id/name_id"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Dhokla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_below="@id/name_id"
+                android:fontFamily="@font/rubik_regular"
+                android:id="@+id/subtitle_id"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="12sp"
+                android:text="6 pcs large size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+            <RelativeLayout
+               android:layout_toRightOf="@id/relative_title_id"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <TextView
+                   android:layout_alignParentRight="true"
+                   android:fontFamily="@font/rubik_medium"
+                   android:id="@+id/price_id"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"
+                   android:text="₹444"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   />
+               <Button
+                   android:layout_marginTop="20dp"
+                   android:background="@drawable/button_design"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@id/price_id"
+                   android:id="@+id/add_button_id"
+                   android:layout_width="wrap_content"
+                   android:text="ADD"
+                   android:layout_height="30dp"
+                   />
+           </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_relative_id"
+        android:elevation="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dhokla"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/offer_show_id"
+        android:layout_marginStart="-40dp"
+        android:background="@drawable/offer_circle_design"
+        android:elevation="10dp"
+        android:layout_width="40dp"
+        android:padding="10dp"
+        android:minHeight="40dp"
+        android:layout_toRightOf="@id/image_relative_id"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/offer_text_id"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="10% off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

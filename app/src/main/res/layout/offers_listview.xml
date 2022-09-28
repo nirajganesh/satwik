@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/card_id"
+        android:elevation="5dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_design"
+        android:layout_width="150dp"
+        android:minWidth="120dp"
+        android:minHeight="140dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:fontFamily="@font/rubik_medium"
+            android:id="@+id/name_id"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Get up to 50 % off+ free delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:background="@drawable/offer_arrow_design"
+            android:layout_below="@id/name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/offer_circle_design"
+            android:layout_marginLeft="-70dp"
+            android:layout_marginTop="-70dp"
+            android:elevation="5dp"
+            android:layout_toRightOf="@id/card_id"
+            android:layout_below="@id/card_id"
+            android:layout_width="90dp"
+            android:padding="15dp"
+            android:minHeight="90dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/offer_text_id"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="UPTO50% OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

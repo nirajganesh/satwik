@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OffersActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/applayoutid"
+        app:elevation="0dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_design"
+            app:title="Offers"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/applayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+    <ImageButton
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/banner_off"
+        android:id="@+id/offer_banner_id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <RelativeLayout
+        android:id="@+id/relative_recommended_id"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/offer_banner_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/recommended_id"
+            android:layout_marginHorizontal="14sp"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Latest offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/Sort_image_id"
+                android:id="@+id/Sort_id"
+                android:layout_marginHorizontal="14sp"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Sort by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:layout_marginEnd="20dp"
+                android:padding="1dp"
+                android:background="@drawable/filter_color_design"
+                android:id="@+id/Sort_image_id"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_filter_list_24"
+                />
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:id="@+id/recyclerview_id_1"
+            android:layout_below="@id/recommended_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/top_relative_id"
+        android:layout_marginVertical="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="150dp"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="12dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/background_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:alpha="0.4"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                  </RelativeLayout>
+
+                <RelativeLayout
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/title_id"
+                        android:fontFamily="@font/rubik_medium"
+                        android:textSize="14sp"
+                        android:text="Get 30% off on your 1st order"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="-70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/offer_arrow_design"
+        android:layout_below="@id/top_relative_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:text="ORDER NOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

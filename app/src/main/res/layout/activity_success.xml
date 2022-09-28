@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/applayoutid"
+        app:elevation="0dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_design"
+            app:navigationIcon="@drawable/ic_round_home_24"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/applayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+
+          <ImageView
+              android:layout_marginTop="20dp"
+              android:id="@+id/logo_id"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/final_logo"
+              android:layout_width="180dp"
+              android:layout_height="50dp"
+              />
+        <RelativeLayout
+            android:layout_below="@id/logo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+        <RelativeLayout
+
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_design"
+            android:elevation="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:background="@drawable/check"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/order_placed_text"
+                    android:layout_marginVertical="30dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:textColor="@color/main_text_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/profile_image"
+                    android:text="Order placed successfully"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <LinearLayout
+                    android:id="@+id/main_linear_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_placed_text"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="@font/rubik_regular"
+                            android:layout_marginLeft="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order no."
+                            android:textColor="@color/main_text_color"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_marginRight="50dp"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/orderid1"
+                                android:fontFamily="@font/rubik_medium"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#123456"
+                                android:textColor="@color/main_text_color"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="@font/rubik_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="Payment ref"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="14sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_marginRight="50dp"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/amount_id"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rubik_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#123450"
+                                android:textColor="@color/main_text_color"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/payment_layout_id"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="@font/rubik_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="Amount paid"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="14sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/pay_ref_id"
+                                android:layout_marginRight="50dp"
+                                android:layout_alignParentRight="true"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rubik_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#123450"
+                                android:textColor="@color/main_text_color"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:background="@drawable/button_design"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/main_linear_id"
+                    android:text="ORDER MORE"
+                    android:id="@+id/order_now_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+            <ImageView
+                android:elevation="20dp"
+                android:id="@+id/success_id"
+                android:background="@drawable/success_popi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
